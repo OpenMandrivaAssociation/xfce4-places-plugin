@@ -12,7 +12,6 @@ BuildRequires:	libxfcegui4-devel >= 4.4.2
 BuildRequires:	perl(XML::Parser)
 BuildRequires:	thunar-devel
 Obsoletes:	xfce-places-plugin
-BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 A places plugin for the Xfce panel.
