@@ -43,5 +43,6 @@ rm -rf %{buildroot}
 %files -f %{name}.lang
 %defattr(-,root,root)
 %doc ChangeLog AUTHORS NEWS
+%{_bindir}/*
 %{_libdir}/xfce4/panel-plugins/*
 %{_datadir}/xfce4/panel-plugins/places.desktop
