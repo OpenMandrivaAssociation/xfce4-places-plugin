@@ -1,7 +1,7 @@
 Summary: 	A places plugin for the Xfce panel
 Name: 		xfce4-places-plugin
-Version: 	1.0.0
-Release: 	%mkrel 2
+Version: 	1.1.0
+Release: 	%mkrel 1
 License:	GPLv2+
 Group: 		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-places-plugin
@@ -42,6 +42,6 @@ rm -rf %{buildroot}
 
 %files -f %{name}.lang
 %defattr(-,root,root)
-%doc ChangeLog AUTHORS
+%doc ChangeLog AUTHORS NEWS
 %{_libdir}/xfce4/panel-plugins/*
 %{_datadir}/xfce4/panel-plugins/places.desktop
