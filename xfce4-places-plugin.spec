@@ -1,7 +1,7 @@
 Summary: 	A places plugin for the Xfce panel
 Name: 		xfce4-places-plugin
 Version: 	1.1.0
-Release: 	%mkrel 7
+Release: 	%mkrel 8
 License:	GPLv2+
 Group: 		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-places-plugin
@@ -9,6 +9,7 @@ Source0: 	http://goodies.xfce.org/releases/xfce4-places-plugin/%{name}-%{version
 # (tpg) http://bugzilla.xfce.org/show_bug.cgi?id=4461
 Patch0:		%{name}-1.1.0-xdg-user-dirs.patch
 Patch1:		%{name}-1.1.0-do-not-segfault-on-exit.patch
+Patch2:		xfce4-places-plugin-1.1.0-format_not_a_string_literal_and_no_format_arguments.patch
 Requires:	xfce4-panel >= 4.4.2
 BuildRequires:	xfce4-panel-devel >= 4.4.2
 BuildRequires:	libxfcegui4-devel >= 4.4.2
@@ -24,6 +25,7 @@ A places plugin for the Xfce panel.
 %setup -q
 %patch0 -p1 -b .xdg
 %patch1 -p1 -b .seg
+%patch2 -p1
 
 %build
 %configure2_5x
