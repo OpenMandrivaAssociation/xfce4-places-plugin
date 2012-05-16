@@ -6,8 +6,6 @@ License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-places-plugin
 Source0:	http://goodies.xfce.org/releases/xfce4-places-plugin/%{name}-%{version}.tar.bz2
-Patch0:		xfce4-places-plugin-1.2.0-add-support-for-new-exo.patch
-Patch2:		xfce4-places-plugin-1.1.0-format_not_a_string_literal_and_no_format_arguments.patch
 BuildRequires:	xfce4-panel-devel >= 4.9.0
 BuildRequires:	libxfcegui4-devel >= 4.4.2
 BuildRequires:	perl(XML::Parser)
@@ -19,12 +17,8 @@ A places plugin for the Xfce panel.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch2 -p1
 
 %build
-#(tpg) needed for patch0
-xdt-autogen
 %configure2_5x
 %make
 
