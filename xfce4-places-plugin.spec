@@ -9,7 +9,7 @@ Source0:	http://archive.xfce.org/src/panel-plugins/xfce4-places-plugin/%(echo %v
 BuildRequires:	xfce4-panel-devel >= 4.9.0
 BuildRequires:	libxfcegui4-devel >= 4.4.2
 BuildRequires:	perl(XML::Parser)
-BuildRequires:	thunar-vfs-devel
+BuildRequires:	thunar-vfs-devel >= 1.2.0-7
 BuildRequires:	pkgconfig(libxfce4ui-1) >= 4.8.0
 Obsoletes:	xfce-places-plugin
 
