@@ -21,7 +21,7 @@ A places plugin for the Xfce panel.
 %setup -q
 
 %build
-%configure2_5x
+%configure
 %make
 
 %install
