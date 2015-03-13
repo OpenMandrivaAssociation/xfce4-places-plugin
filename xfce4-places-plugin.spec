@@ -21,6 +21,7 @@ A places plugin for the Xfce panel.
 %setup -q
 
 %build
+%define _disable_ld_no_undefined 1
 %configure
 %make
 
