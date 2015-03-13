@@ -10,7 +10,6 @@ URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-places-plugin
 Source0: 	http://archive.xfce.org/src/panel-plugins/xfce4-places-plugin/%{url_ver}/%{name}-%{version}.tar.bz2
 Requires:	xfce4-panel >= 4.4.2
 BuildRequires:	pkgconfig(libxfce4panel-1.0)
-BuildRequires:	pkgconfig(libxfcegui4-1.0)
 BuildRequires:	pkgconfig(libxfce4ui-1) >= 4.12
 BuildRequires:	perl(XML::Parser)
 
