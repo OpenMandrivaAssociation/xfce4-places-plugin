@@ -3,7 +3,7 @@
 Summary: 	A places plugin for the Xfce panel
 Name: 		xfce4-places-plugin
 Version: 	1.7.0
-Release: 	0.1
+Release: 	1
 License:	GPLv2+
 Group: 		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-places-plugin
@@ -22,7 +22,7 @@ A places plugin for the Xfce panel.
 
 %build
 %define _disable_ld_no_undefined 1
-%configure2_5x
+%configure
 %make
 
 %install
